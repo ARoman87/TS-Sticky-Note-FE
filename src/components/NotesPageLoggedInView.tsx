@@ -46,11 +46,11 @@ const NotesPageLoggedInView = () => {
 
     const notesGrid =
         <Row xs={1} md={2} xl={3} className={`g-4 ${styles.notesGrid}`}>
-            {notes.map(note => (
+            {notes.map((note, index) => (
                 <Col key={note._id}>
                     <Note
                         note={note}
-                        className={styles.note}
+                        className={`${index % 5 === 0 ? styles.note3 : index % 4 === 0 ? styles.note1 : index % 2 === 0 ? styles.note : index % 3 === 0 ? styles.note4 : styles.note5}`}
                         onNoteClicked={setNoteToEdit}
                         onDeleteNoteClicked={deleteNote}
                     />

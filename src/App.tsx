@@ -11,6 +11,7 @@ import NotesPage from './pages/NotesPage';
 import NotFoundPage from './pages/NotFoundPage';
 import PrivacyPage from './pages/PrivacyPage';
 import styles from "./styles/App.module.css";
+import Footer from './components/Footer';
 
 function App() {
 
@@ -55,6 +56,7 @@ function App() {
 							element={<NotFoundPage />}
 						/>
 					</Routes>
+					
 				</Container>
 				{showSignUpModal &&
 					<SignUpModal
@@ -74,6 +76,7 @@ function App() {
 						}}
 					/>
 				}
+				<Footer />
 			</div>
 		</BrowserRouter>
 	);

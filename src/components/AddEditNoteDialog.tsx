@@ -53,6 +53,7 @@ const AddEditNoteDialog = ({ noteToEdit, onDismiss, onNoteSaved }: AddEditNoteDi
                         register={register}
                         registerOptions={{ required: "Required" }}
                         error={errors.title}
+                        maxLength={20}
                     />
 
                     <TextInputField

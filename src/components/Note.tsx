@@ -35,7 +35,7 @@ const Note = ({ note, onNoteClicked, onDeleteNoteClicked, className }: NoteProps
                 <Card.Title className={styleUtils.flexCenter}>
                     {title}
                     <MdDelete
-                        className="text-muted ms-auto"
+                        className="text-muted ms-auto h5"
                         onClick={(e) => {
                             onDeleteNoteClicked(note);
                             e.stopPropagation();
@@ -43,7 +43,7 @@ const Note = ({ note, onNoteClicked, onDeleteNoteClicked, className }: NoteProps
                     />
                 </Card.Title>
                 <Card.Text className={styles.cardText}>
-                    {text}
+                    {text?.toLocaleUpperCase()}
                 </Card.Text>
             </Card.Body>
             <Card.Footer className="text-muted">

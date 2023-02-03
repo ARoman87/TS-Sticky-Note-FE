@@ -2,6 +2,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 40px;
+}
+
+img {
+    margin-right: 10px;
+}
+
+.navbar {
+    background-color: #414141;
 }
 
 .notesGrid {

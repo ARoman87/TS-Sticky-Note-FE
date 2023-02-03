@@ -8,8 +8,8 @@ interface NavBarLoggedOutViewProps {
 const NavBarLoggedOutView = ({ onSignUpClicked, onLoginClicked }: NavBarLoggedOutViewProps) => {
     return (
         <>
-            <Button onClick={onSignUpClicked}>Sign Up</Button>
-            <Button onClick={onLoginClicked}>Log In</Button>
+            <Button className="bg-dark border-0" onClick={onSignUpClicked}>Sign Up</Button>
+            <Button className="bg-dark border-0" onClick={onLoginClicked}>Log In</Button>
         </>
     );
 }

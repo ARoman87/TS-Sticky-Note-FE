@@ -13,9 +13,10 @@ interface NavBarProps {
 
 const NavBar = ({ loggedInUser, onSignUpClicked, onLoginClicked, onLogoutSuccessful }: NavBarProps) => {
     return (
-        <Navbar bg="primary" variant="dark" expand="sm" sticky="top">
+        <Navbar bg="dark" variant="dark" expand="sm" sticky="top" className="navbar">
             <Container>
                 <Navbar.Brand as={Link} to="/">
+                    <img src="https://www.pngall.com/wp-content/uploads/5/Sticky-Notes-PNG-Clipart.png" height={30} alt="" />
                     Your Notes App
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="main-navbar" />

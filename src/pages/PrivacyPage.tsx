@@ -1,9 +1,9 @@
 const PrivacyPage = () => {
     return ( 
-        <div>
-            <p>We care about your privacy. Promise!</p>
+        <div className="privacy">
+            <img src="https://i.imgflip.com/2lldmr.jpg" alt="privacy meme"  />
         </div>
-     );
+    );
 }
- 
+
 export default PrivacyPage;
